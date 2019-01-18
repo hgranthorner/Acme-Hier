@@ -4,7 +4,7 @@
   "description": "",
   "main": "acme-hier.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin acme-hier.specs.js --watch"
+    "test": "./node_modules/mocha/bin/mocha acme-hier.specs.js --watch"
   },
   "keywords": [],
   "author": "",
