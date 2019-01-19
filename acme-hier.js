@@ -1,9 +1,9 @@
 function showManagementStructure(userArray) {
   let boss = userArray.find(user => !user.managerId)
 
-  helperFunction(boss, 0)
+  logHierarchy(boss, 0)
 
-  function helperFunction(obj, level) {
+  function logHierarchy(obj, level) {
     console.log(' -'.repeat(level) + obj.name)
     let reports = userArray.filter(user => user.managerId === obj.id)
     for (let report of reports) {
